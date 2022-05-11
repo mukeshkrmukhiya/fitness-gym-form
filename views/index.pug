@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+     style
+        include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+        <li id="item-1" class="nav-items"><a href="/">Home</a></li>
+        <li id="item-2" class="nav-items"><a href="/">About</a></li>
+        <li id="item-3" class="nav-items"><a href="/">Services</a></li>
+        <li id="item-4" class="nav-items"><a href="/contact">Contacts</a></li>
+    </ul>
+    </nav>
+
+    <h1>Limited offer: Get MAKEIT fitness gym membership only in $60(dolor)</h1>
+    
+    <section id="form-section">
+        <form action="/contact" method="post" id="forms">
+            <span class="form-span">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="inputs" placeholder="Enter Your Name">
+        </span>
+            <span class="form-span">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" class="inputs" placeholder="Enter Your age">
+        </span>
+        <span class="form-span">
+            <label for="Gender">Gender:</label>
+            <select name="gender" id="gender" class="inputs" >
+                <option value="Select Gender" selected>Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Trans-Gender">Trans-Gender</option>
+            </select>
+        </span>
+        <span class="form-span">
+            <label for="address">address:</label>
+            <Textarea  name="address" id="address" class="inputs" placeholder="Give Your Local address"></Textarea>
+        </span>
+        <span class="form-span">
+            <label for="aboutu">About:</label>
+            <Textarea  name="aboutu" id="aboutu" class="inputs" placeholder="Write about u..."></Textarea>
+        </span>
+        <div id="sub-res"></div>
+        <input class="btn" type="reset" id="res-btn" class="inputs" name="reset" value="reset" >
+         <input class="btn" type="submit" id="sub-btn" class="inputs" name="submit" value="submit">
+        </form>
+    </section>
+</body>
+</html>
